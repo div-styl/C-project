@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(228, 189, 131);
+}
+h1{
+    color: aquamarine;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+p{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: medium;
+}
