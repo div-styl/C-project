@@ -6,12 +6,12 @@
     char Name [] = "john";
     int age = 20;
    
-    printf("hello %s \n", Name);
-    printf("hello %d \n", age);
+    printf("my name is %s \t", Name );
+    printf("I am %d \n", age);
     char newnamr []= "don"; 
     age = 21;
-    printf("hello %s \n", newnamr);
-    printf("hello %d \n", age);
+    printf("my name is %s \t", newnamr);
+    printf(" my age %d \n", age);
 
     int nwage = 100;
     double gpa = 4.6;
