@@ -9,10 +9,17 @@ int secondage = 70;
 printf("his father has %d \n", secondage);
 // new code 
 double num = 10.5;
+char name [] = "lmao";
 double num2 = 125;
 float num1 = 19.9f;
 printf ("JOHN GOT %.2lf \t", num);
 printf ("THE FATHER GOT %.2f \n", num1);
-printf ("TEST %lf \n",num2);
+printf ("TEST %lf \t",num2);
+printf ("%s \n", name);
+// explore size
+printf ("double = %zu \n", sizeof(num));
+printf ("char = %zu \n", sizeof (name));
+printf ("double =%zu \n", sizeof(num2));
+printf ("float = %zu \n", sizeof (num1));
 return 0;
 }

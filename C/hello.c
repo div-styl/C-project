@@ -18,9 +18,8 @@
     char mark = 'A';
     char phrase [] = "la fac fuck";
     printf("age = %d\n", nwage);
-    printf("gpa = %lf\n", gpa);
+    printf("gpa = %.2lf\n", gpa);
     printf("mark = %c\n", mark);
     printf("phrase = %s\n", phrase);
-    printf ("hello %d,  500");
     return 0;
  }
