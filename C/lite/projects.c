@@ -8,16 +8,24 @@ int main()
     float presntage;
     int d = 20;
     int c = 6;
+// modulo calculation
     int leftover = d % c;
- // calculate the sum of a and b
+// increasing
+   int increas = 1200;
+   int decrease = 30;
+   increas++;
+   decrease--;
+// calculate the sum of a and b
  sum = a * b;
- // calculate tax
+// calculate tax
  presntage = sum * 0.2;
  printf ("result no tax %d \n", sum);
  printf ("reult after tax %.2f \n", presntage);
-
-   
-    printf("%i", leftover);
+//modulo printing
+ printf("%i \n", leftover);
+// print increasing 
+ printf("icrease %d \n",increas);
+ printf("decrease %d",decrease);
  
  return 0;
  
