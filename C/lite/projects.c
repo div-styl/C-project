@@ -8,6 +8,7 @@ int main()
     float presntage;
     int d = 20;
     int c = 6;
+    int shortcut = 13;
 // modulo calculation
     int leftover = d % c;
 // increasing
@@ -17,6 +18,8 @@ int main()
    decrease--;
 // calculate the sum of a and b
  sum = a * b;
+// shortcut
+shortcut += 2; 
 // calculate tax
  presntage = sum * 0.2;
  printf ("result no tax %d \n", sum);
@@ -25,7 +28,10 @@ int main()
  printf("%i \n", leftover);
 // print increasing 
  printf("icrease %d \n",increas);
- printf("decrease %d",decrease);
+ printf("decrease %d \n",decrease);
+// printf the shortcut
+printf("shortcut result, %i",shortcut);
+
  
  return 0;
  
