@@ -21,6 +21,12 @@ printf ("double = %zu \n", sizeof(num));
 printf ("char = %zu \n", sizeof (name));
 printf ("double =%zu \n", sizeof(num2));
 printf ("float = %zu \n", sizeof (num1));
+int hello();
+return 0;
+}
+
+int hello()
+{
 int sum = 0;
 int a = 20;
 int b = 30;
