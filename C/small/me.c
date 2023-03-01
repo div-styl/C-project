@@ -21,5 +21,10 @@ printf ("double = %zu \n", sizeof(num));
 printf ("char = %zu \n", sizeof (name));
 printf ("double =%zu \n", sizeof(num2));
 printf ("float = %zu \n", sizeof (num1));
+int sum = 0;
+int a = 20;
+int b = 30;
+sum = a + b;
+printf("result %d", sum);
 return 0;
 }
