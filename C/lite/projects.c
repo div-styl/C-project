@@ -2,7 +2,6 @@
 
 int main()
 {
-   
  
 // implicite declaration of function 
   
@@ -11,10 +10,12 @@ int main()
     shortcut();
     icreaing();
     money();
- return 0;
+    salam();
+    return 0;
 
  
 }
+
 int icreaing ()
 {
    int increas = 1200;
@@ -51,9 +52,9 @@ int calculation ()
     int sum;
     float presntage;
     sum = a * b;
- presntage = sum * 0.2;
- printf ("result no tax %d \n", sum);
- printf ("reult after tax %.2f \n", presntage);
+    presntage = sum * 0.2;
+    printf ("result no tax %d \n", sum);
+    printf ("reult after tax %.2f \n", presntage);
  return 0;
 
 }
@@ -65,10 +66,18 @@ int money ()
     int con = 2;
     int di = 4;
 
-    if (con != di){
+        if (con != di){
         con++;
         printf ("here is it %d \n", con);
-        return 0;
+    return 0;
     }
 }
 
+int salam()
+{
+    int h= 1;
+    int j = 2;
+     sum = j + h;
+    printf("run %i \n", sum);
+    return 0;
+}
