@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -9,13 +10,10 @@ int main()
     modulo();
     shortcut();
     icreaing();
-    money();
-    salam();
+    plus();
+    logic1();
     return 0;
-
- 
 }
-
 int icreaing ()
 {
    int increas = 1200;
@@ -44,7 +42,6 @@ int modulo()
     return 0;
 
 }
-
 int calculation ()
 {
     int a = 1200;
@@ -58,9 +55,7 @@ int calculation ()
  return 0;
 
 }
-
-
-int money ()
+int plus ()
 
 {
     int con = 2;
@@ -72,12 +67,23 @@ int money ()
     return 0;
     }
 }
-
-int salam()
+int logic1() 
 {
-    int h= 1;
-    int j = 2;
-     sum = j + h;
-    printf("run %i \n", sum);
+   
+    int h1 = 20;
+    int h2 = -2;
+    char s [] = "positive too\n";
+    char s1 []= "positive";
+
+    if (h1 > 0 && h2 > 0){
+        printf("%s", &s1);
+    }
+    if (h1 > 0 && !(h2 > 0)){
+        printf("%s", &s);
+    }
     return 0;
 }
+
+
+
+
