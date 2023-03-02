@@ -5,15 +5,18 @@ int main()
 {
  
 // implicite declaration of function 
-  
+  /*
     calculation();
     modulo();
     shortcut();
     icreaing();
     plus();
     logic1();
+    */
+    newelse();
     return 0;
 }
+/*
 int icreaing ()
 {
    int increas = 1200;
@@ -83,7 +86,14 @@ int logic1()
     }
     return 0;
 }
+*/
+int newelse() {
+int article = 1200;
 
-
-
+if (article > 2000 ){
+    printf ("article passed \n");
+}else{
+    printf("failed \n ");
+}
+}
 
