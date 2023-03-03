@@ -12,8 +12,9 @@ int main()
     icreaing();
     plus();
     logic1();
-    */
     newelse();
+    */
+    hello ();
     return 0;
 }
 /*
@@ -86,7 +87,7 @@ int logic1()
     }
     return 0;
 }
-*/
+
 int newelse() {
 int article = 1200;
 
@@ -96,4 +97,22 @@ if (article > 2000 ){
     printf("failed \n ");
 }
 }
+*/
+int hello (){
 
+    // data
+    int ph = 8;
+
+    // if 
+if (ph > 20 ){
+    printf (" BASIC\n");
+} else if ( ph > 9  ){
+    printf (" ACID \n");
+} else if (ph > 1 ){
+    printf("BASC \n");
+} else {
+    printf ("ACIDE");
+}
+return 0;
+
+}
