@@ -99,7 +99,6 @@ if (article > 2000 ){
     printf("failed \n ");
 }
 }
-
 int hello (){
 
     // data
@@ -118,7 +117,6 @@ if (ph > 20 ){
 return 0;
 
 }
-
 int smthg(){
     int a = 10;
     int b = 20;
@@ -126,7 +124,6 @@ int smthg(){
     a > b ? printf (" yeah you can do it \n") : printf (" nah you can't \n");
     return 0;
 }
-
 int sokhra(){
     double total = 10;
     double garo = 2.5;
@@ -136,7 +133,10 @@ int sokhra(){
   printf (" li b9a lik %.2lf \n ", sum);
   printf (" bimo dyr %.2lf \n", bimo);
   return 0;
-} */
+} 
+*/
+
+// switch
 int boxer()
 {
 double earth_weight;
@@ -155,10 +155,10 @@ printf("please enter number from 1-7 : ");
 scanf("%d",&operation);
 switch (operation){
   case 1 :
- yourweight = earth_weight * Mercury;
+  yourweight = earth_weight * Mercury;
   break;
   case 2 :
-yourweight = earth_weight * Vanus;
+  yourweight = earth_weight * Vanus;
   break; 
   case 3:
   yourweight = earth_weight * Mars;
