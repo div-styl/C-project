@@ -16,8 +16,10 @@ int main()
     hello ();
     
    smthg();
-   sokhra(); */
+   sokhra(); 
    boxer();
+   */
+   jake();
     return 0;
 }
 /*
@@ -136,48 +138,51 @@ int sokhra(){
 } 
 */
 
-// switch
-int boxer()
+// switch + loop
+int jake(){
+
+double num1, num2, sum;
+char op;
+int task = 1;
+
+while (task)
 {
-double earth_weight;
-double yourweight;
-char operation;
-double Mercury = 0.38;
-double Vanus  = 0.91;
-double Mars = 0.38;
-double Jupiter = 2.34;
-double Saturn = 1.06;
-double Uranus = 0.92;
-double Neptune = 1.19;
-printf ("what is your weight on earth ? \n");
-scanf ("%lf", &earth_weight);
-printf("please enter number from 1-7 : ");
-scanf("%d",&operation);
-switch (operation){
-  case 1 :
-  yourweight = earth_weight * Mercury;
-  break;
-  case 2 :
-  yourweight = earth_weight * Vanus;
-  break; 
-  case 3:
-  yourweight = earth_weight * Mars;
-  break;
-  case 4 :
-  yourweight = earth_weight * Jupiter;
-  break;
-  case 5:
-  yourweight = earth_weight * Saturn;
-  break;
-  case 6 : 
-  yourweight = earth_weight * Uranus;
-  break;
-  case 7 :
-  yourweight = earth_weight * Neptune; 
-  break;
-  default :
-  printf (" error \n");
+    printf (" please enter 1st number : \n ");
+    scanf ("%lf", & num1);
+    
+    printf ("please enter the operation (+,-,/,*) : \n");
+    scanf (" %c", &op);
+
+    printf (" put the 2nd num :  \n");
+    scanf ("%lf", &num2);
+
+
+    switch (op){
+    case '+' :
+    sum = num1 + num2 ;
+    break; 
+    case '-' :
+    sum = num1 - num2;
+    break;
+    case '/' :
+      if (num2 == 0) {
+        printf ("nah it is not going to happen by 0 try another number \n");
+      }else {
+         sum = num1 / num2;
+      }
+    break;
+    case '*' :
+    sum = num1 * num2;
+    break;
+    default :
+    printf ("tfu ach hdshi abndm  \n");
+    break; 
+
 }
-printf ("your weight is : %.2lf \n", yourweight);
- return 0;
+printf ("the result is : %.lf \n", sum);
+printf ( "enter 1 to redo or  0 to exit : ");
+scanf ("%d", & task);
 }
+return 0;
+}
+
