@@ -176,7 +176,7 @@ yourweight = earth_weight * Vanus;
   yourweight = earth_weight * Neptune; 
   break;
   default :
-  printf (" error");
+  printf (" error \n");
 }
 printf ("your weight is : %.2lf \n", yourweight);
  return 0;
