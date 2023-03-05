@@ -204,20 +204,18 @@ int repate = 1;
 // input
     while (repate)
     {
-        printf ("Good morning Sir/Ma'am, How much you will put in your Bank account?  :   \n");
-        scanf ("%.2lf", &checkin);
-        if (checkin < 0) {
-            printf ("nothing to do here \n");
-            printf ("if you want to put money again please tap 1 if you don't type 0 :  \n");
-            scanf ("%d", repate);
-        }else if (checkin > 0){
-            youraccount = checkin - checkinpay;
-            printf ("%.lf", youraccount);
+        printf ("Good morning Sir/Ma'am, How much you will put in your Bank account?: ");
+        scanf ("%lf", &checkin);
+            if (checkin >= 0){
+                youraccount = checkin - checkinpay;
+                printf ("your account be like: %.2lf", youraccount)
+            } else 
+            {
+                printf ("something went wrong please tap 1 to repeat or 0 to exit: ");
+                scanf ("%d", &repate);
+            }
 
         }
       return 0;
 
     }
-
-
-}
