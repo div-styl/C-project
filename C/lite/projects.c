@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 int main()
 {
  
@@ -20,6 +20,7 @@ int main()
    boxer();
    */
    jake();
+   bank();
     return 0;
 }
 /*
@@ -137,16 +138,21 @@ int sokhra(){
   return 0;
 } 
 */
-
 // switch + loop
+/*
 int jake(){
 
-double num1, num2, sum;
+ double num1, num2, sum;
 char op;
 int task = 1;
 
 while (task)
 {
+    char name [1000];
+printf ("What's your name: ");
+gets(name);
+printf ("Hello Mr(s) :");
+puts (name);
     printf (" please enter 1st number : \n ");
     scanf ("%lf", & num1);
     
@@ -184,5 +190,34 @@ printf ( "enter 1 to redo or  0 to exit : ");
 scanf ("%d", & task);
 }
 return 0;
-}
 
+}
+*/
+int bank(){
+// data
+double checkin;
+double checkinpay = 1;
+double withdraw;
+double youraccount;
+double whatsleft;
+int repate = 1;
+// input
+    while (repate)
+    {
+        printf ("Good morning Sir/Ma'am, How much you will put in your Bank account?  :   \n");
+        scanf ("%.2lf", &checkin);
+        if (checkin < 0) {
+            printf ("nothing to do here \n");
+            printf ("if you want to put money again please tap 1 if you don't type 0 :  \n");
+            scanf ("%d", repate);
+        }else if (checkin > 0){
+            youraccount = checkin - checkinpay;
+            printf ("%.lf", youraccount);
+
+        }
+      return 0;
+
+    }
+
+
+}
