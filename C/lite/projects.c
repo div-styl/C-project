@@ -5,7 +5,7 @@ int main()
 {
  
 // implicite declaration of function 
-  /*
+/*
     calculation();
     modulo();
     shortcut();
@@ -13,8 +13,11 @@ int main()
     plus();
     logic1();
     newelse();
-    */
     hello ();
+    
+   smthg();
+   sokhra(); */
+   boxer();
     return 0;
 }
 /*
@@ -87,7 +90,6 @@ int logic1()
     }
     return 0;
 }
-
 int newelse() {
 int article = 1200;
 
@@ -97,7 +99,7 @@ if (article > 2000 ){
     printf("failed \n ");
 }
 }
-*/
+
 int hello (){
 
     // data
@@ -115,4 +117,67 @@ if (ph > 20 ){
 }
 return 0;
 
+}
+
+int smthg(){
+    int a = 10;
+    int b = 20;
+
+    a > b ? printf (" yeah you can do it \n") : printf (" nah you can't \n");
+    return 0;
+}
+
+int sokhra(){
+    double total = 10;
+    double garo = 2.5;
+    double bimo = 2 * 3;
+    double sum; 
+  sum = (garo + bimo ) - total;
+  printf (" li b9a lik %.2lf \n ", sum);
+  printf (" bimo dyr %.2lf \n", bimo);
+  return 0;
+} */
+int boxer()
+{
+double earth_weight;
+double yourweight;
+char operation;
+double Mercury = 0.38;
+double Vanus  = 0.91;
+double Mars = 0.38;
+double Jupiter = 2.34;
+double Saturn = 1.06;
+double Uranus = 0.92;
+double Neptune = 1.19;
+printf ("what is your weight on earth ? \n");
+scanf ("%lf", &earth_weight);
+printf("please enter number from 1-7 : ");
+scanf("%d",&operation);
+switch (operation){
+  case 1 :
+ yourweight = earth_weight * Mercury;
+  break;
+  case 2 :
+yourweight = earth_weight * Vanus;
+  break; 
+  case 3:
+  yourweight = earth_weight * Mars;
+  break;
+  case 4 :
+  yourweight = earth_weight * Jupiter;
+  break;
+  case 5:
+  yourweight = earth_weight * Saturn;
+  break;
+  case 6 : 
+  yourweight = earth_weight * Uranus;
+  break;
+  case 7 :
+  yourweight = earth_weight * Neptune; 
+  break;
+  default :
+  printf (" error");
+}
+printf ("your weight is : %.2lf \n", yourweight);
+ return 0;
 }
