@@ -139,7 +139,7 @@ int sokhra(){
 } 
 */
 // switch + loop
-/*
+
 int jake(){
 
  double num1, num2, sum;
@@ -192,30 +192,3 @@ scanf ("%d", & task);
 return 0;
 
 }
-*/
-int bank(){
-// data
-double checkin;
-double checkinpay = 1;
-double withdraw;
-double youraccount;
-double whatsleft;
-int repate = 1;
-// input
-    while (repate)
-    {
-        printf ("Good morning Sir/Ma'am, How much you will put in your Bank account?: ");
-        scanf ("%lf", &checkin);
-            if (checkin >= 0){
-                youraccount = checkin - checkinpay;
-                printf ("your account be like: %.2lf", youraccount)
-            } else 
-            {
-                printf ("something went wrong please tap 1 to repeat or 0 to exit: ");
-                scanf ("%d", &repate);
-            }
-
-        }
-      return 0;
-
-    }
