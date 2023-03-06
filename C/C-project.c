@@ -49,22 +49,29 @@ scanf ("%d", & task);
 return 0;
 }
 */
+void print_result(double nm1, char name [100], double account){
+  printf ("Good eveing Mr (%s) \n", name );
+  printf ("How much money you would like to put in your bank account sir: ",nm1);
+  printf ("your status bank account is %.2lf \n", account);
+
+}
 int bank()
 {
 double nm1;
 double paywithdraw =1;
-double youraccount;
+double account = nm1 - paywithdraw ;
 double takeout;
 double task = 1;
 int op;
 while (task)
 {
-  char name [100];
-  printf ("please enter your secret name: ");
-  scanf (" %c", name);
-  printf (" Good everning Mr/Mrs %c to your secret bank \n ", name);
-  printf (" How much money you want to put today sir / ma'am: ");
-  scanf ("%lf", &nm1 - &paywithdraw);
+  char name[100];
+  printf ("enter name: ");
+  fgets (name, sizeof(name), stdin);
+  print_result (name);
+  print_result (nm1);
+  scanf ("%.2lf", &nm1);
+
   printf ("please choose actions you wanna do in your account (withdraw = 1/ accountstatus = 2)"); 
 
         switch (op)
@@ -73,11 +80,9 @@ while (task)
 
             printf (" how much you went to withdraw?: ");
             scanf ("%lf", &takeout);
-            youraccount = nm1 - takeout;
-            printf ("%.2lf", youraccount );
+           account = account - takeout;
+            printf ("%.2lf", account );
             break;
-        case 2 :
-           printf ("your account sum: %lf", nm1);
         default:
             printf ("smthg went wrong press 1 to redo or 0 to exit : ");
             scanf ("%lf", &task);
