@@ -3,7 +3,7 @@
 #include <string.h>
 
 // work place
-int jake(){
+/*int jake(){
 
  double num1, num2, sum;
 char op;
