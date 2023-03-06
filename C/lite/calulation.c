@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int main(){
- jake();
-}
-
+// work place
 int jake(){
 
  double num1, num2, sum;
@@ -55,5 +53,52 @@ printf ( "enter 1 to redo or  0 to exit : ");
 scanf ("%d", & task);
 }
 return 0;
+
+}
+*/
+int bank()
+{
+double nm1;
+double paywithdraw =1;
+double youraccount;
+double takeout;
+double task = 1;
+int op;
+while (task)
+{
+  char name [100];
+  printf ("please enter your secret name: ");
+  scanf (" %c", name);
+  printf (" Good everning Mr/Mrs %c to your secret bank \n ", name);
+  printf (" How much money you want to put today sir / ma'am: ");
+  scanf ("%lf", &nm1 - &paywithdraw);
+  printf ("please choose actions you wanna do in your account (withdraw = 1/ accountstatus = 2)"); 
+
+        switch (op)
+        {
+        case  1 :
+
+            printf (" how much you went to withdraw?: ");
+            scanf ("%lf", &takeout);
+            youraccount = nm1 - takeout;
+            printf ("%.2lf", youraccount );
+            break;
+        case 2 :
+           printf ("your account sum: %lf", nm1);
+        default:
+            printf ("smthg went wrong press 1 to redo or 0 to exit : ");
+            scanf ("%lf", &task);
+            break;
+        }
+}
+
+return 0;
+
+}
+
+int main()
+{
+ //jake();
+ bank();
 
 }
