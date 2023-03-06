@@ -4,11 +4,9 @@
 
 // work place
 /*int jake(){
-
  double num1, num2, sum;
 char op;
 int task = 1;
-
 while (task)
 {
     char name [1000];
@@ -21,11 +19,8 @@ puts (name);
     
     printf ("please enter the operation (+,-,/,*) : \n");
     scanf (" %c", &op);
-
     printf (" put the 2nd num :  \n");
     scanf ("%lf", &num2);
-
-
     switch (op){
     case '+' :
     sum = num1 + num2 ;
@@ -46,14 +41,12 @@ puts (name);
     default :
     printf ("tfu ach hdshi abndm  \n");
     break; 
-
 }
 printf ("the result is : %.lf \n", sum);
 printf ( "enter 1 to redo or  0 to exit : ");
 scanf ("%d", & task);
 }
 return 0;
-
 }
 */
 int bank()
