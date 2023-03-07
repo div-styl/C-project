@@ -3,17 +3,12 @@
 #include <string.h>
 // caluclate 
 
-int calculator {
- double num1, num2, sum;
+int calculator() {
+double num1, num2, sum;
 char op;
 int task = 1;
 while (task)
 {
-    char name [1000];
-printf ("What's your name: ");
-gets(name);
-printf ("Hello Mr(s) :");
-puts (name);
     printf (" please enter 1st number : \n ");
     scanf ("%lf", & num1);
     
