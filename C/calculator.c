@@ -3,7 +3,7 @@
 #include <string.h>
 // caluclate 
 
-int calculator{
+int calculator {
  double num1, num2, sum;
 char op;
 int task = 1;
