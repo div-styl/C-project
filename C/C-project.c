@@ -41,7 +41,7 @@ while (task)
             printf ("%.2lf", account );
             break;
         case 3 :
-            printf("%.2lf\n", account );
+            print_result(account);
             break;
         default:
             printf ("smthg went wrong press 1 to redo or 0 to exit : ");
