@@ -3,13 +3,6 @@
 #include <string.h>
 
 
-void printv(double account, char name [200][200]){
- 
-  printf ("your status bank account is %lf \n", account);
-  printf ("what is your name please:  ");
-  scanf ("%s", name);
-  printf ("Good morrning MR.%s \n",name);
-}
 int bank()
 {
 double nm1;
@@ -17,14 +10,18 @@ double paywithdraw =1;
 double account;
 double takeout;
 double task = 1; 
-char name [200][200];
+char name [100];
 int op; 
 while (task)
 {
-  //get name
-   printv(account, name);
+
+  printf ("what is your name please:  ");
+  scanf ("%99[^\n]", name);
+  printf ("Good morrning MR.%s \n",name);
+ 
+
   // odds
-  printf ("choose your operation (put= 1 withdraw = 2/ accountstatus = 3): "); 
+  printf ("choose your operation (put= 1/ withdraw = 2/ accountstatus = 3): "); 
   scanf("%d",&op);
         switch (op)
         {
@@ -32,17 +29,16 @@ while (task)
           printf ("how much y wanna put: ");
           scanf ("%lf",&nm1);
           account = nm1 - paywithdraw;
-          printf ("you balance %.2lf", account);
+          printf ("you balance %lf", account);
           break;
         case  2 :
-
             printf (" how much you went to withdraw?: ");
             scanf ("%lf", &takeout);
            account = account - takeout;
-            printf ("%lf", &account );
+            printf ("%lf", account );
             break;
         case 3 :
-            printv(account, name);
+             printf ("your status bank account is %lf \n", account);
             break;
         default:
             printf ("smthg went wrong press 1 to redo or 0 to exit : ");
