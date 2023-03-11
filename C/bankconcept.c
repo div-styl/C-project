@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-//-------------------------operation-------------------------
+//-------------------------operation--------------------------------------
 void operation(int *op){
 	printf ("--------welcome to the operation----------- \n");
     printf("Please choose your operation:  \n");
@@ -82,17 +82,20 @@ double withdraw(double *account1, double *account2, char *user1, char *user2){
 }
 // -------------------------------transfer-------------------------------------
 double transfer(char *user1, char *user2, double *account1, double *account2){
+	char accountuser[100];
+    printf ("lmn bghity tsft flous: ");
+    scanf ("%s",accountuser);
     double amount;
     printf("How much would you like to transfer: ");
-    scanf("%lf", &amount);
-    if (amount <= *account1){
-        *account1 -= amount;
-        *account2 += amount;
-        printf("Allahuma 9dirna ela fi3l lkhair!\n");
-        return amount;
-    } else if (amount <= *account2){
+    scanf ("%lf", &amount);
+    if (strcmp (accountuser, user1)==0){
         *account2 -= amount;
         *account1 += amount;
+        printf("Allahuma 9dirna ela fi3l lkhair!\n");
+        return amount;
+    } else if (strcmp (accountuser, user2)==0){
+        *account1 -= amount;
+        *account2 += amount;
         printf(" allah!\n");
         return amount;
     } else {
