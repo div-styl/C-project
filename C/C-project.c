@@ -3,6 +3,7 @@
 #include <string.h>
 
 
+
 int bank()
 {
 double nm1;
