@@ -7,19 +7,18 @@ int bank()
 {
 double nm1;
 double paywithdraw =1;
-double account;
+double account = 0;
 double takeout;
 double task = 1; 
 char name [100];
 int op; 
+printf ("what is your name please:  ");
+scanf ("%99[^\n]", name);
+printf ("Good morrning MR.%s \n",name);
 while (task)
 {
 
-  printf ("what is your name please:  ");
-  scanf ("%99[^\n]", name);
-  printf ("Good morrning MR.%s \n",name);
- 
-
+  
   // odds
   printf ("choose your operation (put= 1/ withdraw = 2/ accountstatus = 3): "); 
   scanf("%d",&op);
@@ -28,8 +27,8 @@ while (task)
         case 1:
           printf ("how much y wanna put: ");
           scanf ("%lf",&nm1);
-          account = nm1 - paywithdraw;
-          printf ("you balance %lf", account);
+          account += nm1 - paywithdraw;
+          printf ("you balance %lf \n", account);
           break;
         case  2 :
             printf (" how much you went to withdraw?: ");
