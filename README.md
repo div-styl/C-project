@@ -3,10 +3,10 @@ I create projects that can be useful for people to use. most of my projects are 
 ```c
 printf ("---------ENJOY SKIMMING MY PROFILE ;)-----------")
 ```
-# first project 
-**This is a basic calculator for doing some basic mathematical operation**
+# PROJECT 0X01
+The projec 0x01 is about **mathematical basic operations** that is created using C language with small basic variables
 have fun using it.
-# SECOND PROJECT
+# PROJECT 0X02
 the project is about a banking concept *depositing, withdraw .....* the project is still under maintenance  of adding new and removing stuff. 
 
 
