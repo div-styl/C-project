@@ -6,19 +6,22 @@
 void operation(int *op){
 	printf ("--------welcome to the operation----------- \n");
     printf("Please choose your operation:  \n");
-    printf("1 - deposit \n");
-    printf ("2 - see your accountbalance\n");
-    printf("3 - withdraw\n");
-    printf("4 - transfer\n");
+    printf ("-------------------------------------------\n");
+    printf("1- deposit \n");
+    printf ("2- accountbalance\n");
+    printf("3- withdraw\n");
+    printf("4- transfer\n");
+    printf ("-------------------------------------------\n");
     printf ("enter the number of operation: ");
     scanf("%d", op);
 }
 
 //--------------------------- usernames -------------------------------------
 void accountuser(char *user1, char *user2){
-	printf ("-----------------welcome to your a7anou---------------------\n");
+	printf ("-----------------welcome to C-Bank---------------------\n");
     printf("please enter the first account: ");
     scanf("%s", user1);
+    printf ("----------------2ND STEP---------------------\n");
     printf ("Good job, now eneter the second one: ");
     scanf ("%s", user2);
 }
@@ -33,12 +36,12 @@ double depositing(double *account1, double *account2, char *user1, char *user2){
     scanf("%lf", &amount);
     if (strcmp(accountuser, user1) == 0){
         *account1 += amount;
-        printf("Allahuma Barik!\n");
+        printf("opla! depositing has been done succefully\n");
     } else if (strcmp(accountuser, user2) == 0){
         *account2 += amount;
-        printf("arabra3!\n");
+        printf("oooooh the deposinting is done!\n");
     } else {
-        printf("pfff ach hd lkhra.\n");
+        printf("maaaaaan something wrong\n");
     }
     return amount;
 }
@@ -55,14 +58,14 @@ double accountbalance(double *account1, double *account2, char *user1, char *use
         printf("You have %lf\n", *account2);
         return *account2;
     } else {
-        printf("fin ghadi finwa ghadi.\n");
+        printf("yo yo something wrong use 1 to redo or 0 to exit.\n");
         return 0;
     }
 }
 // ------------------------------withdraw-------------------------------------
 double withdraw(double *account1, double *account2, char *user1, char *user2){
     char accountuser[100];
-    printf ("achmn account bghit tkhrj mno lflous albogoss: ");
+    printf ("choose an account you want to withdraw from: ");
     scanf ("%s",accountuser);
     double amount;
     printf("How much would you like to withdraw: ");
@@ -73,17 +76,17 @@ double withdraw(double *account1, double *account2, char *user1, char *user2){
         return amount;
     } else if (amount <= *account2){
         *account2 -= amount;
-        printf("zahya alm3lm!\n");
+        printf("Um! it seems you are having a good night!\n");
         return amount;
     } else {
-        printf("m7zu9a l9dya.\n");
+        printf("poor guy! :( .\n");
         return 0;
     }
 }
 // -------------------------------transfer-------------------------------------
 double transfer(char *user1, char *user2, double *account1, double *account2){
 	char accountuser[100];
-    printf ("lmn bghity tsft flous: ");
+    printf ("To whom you want to send money: ");
     scanf ("%s",accountuser);
     double amount;
     printf("How much would you like to transfer: ");
@@ -91,7 +94,7 @@ double transfer(char *user1, char *user2, double *account1, double *account2){
     if (strcmp (accountuser, user1)==0){
         *account2 -= amount;
         *account1 += amount;
-        printf("Allahuma 9dirna ela fi3l lkhair!\n");
+        printf("What generous you are! :) \n");
         return amount;
     } else if (strcmp (accountuser, user2)==0){
         *account1 -= amount;
@@ -99,7 +102,9 @@ double transfer(char *user1, char *user2, double *account1, double *account2){
         printf(" allah!\n");
         return amount;
     } else {
-        printf("Transaction failed.\n");
+        printf("two things.\n");
+        printf ("1= you don't have money.\n");
+        printf("2= you entered value which is not correct\n");
         return 0;
     }
 }
