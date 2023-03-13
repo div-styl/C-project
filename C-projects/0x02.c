@@ -6,12 +6,12 @@
 void operation(int *op){
 	printf ("--------welcome to the operation----------- \n");
     printf("Please choose your operation:  \n");
-    printf ("-------------------------------------------\n");
+    printf ("------------------------------------------- \n");
     printf("1- deposit \n");
     printf ("2- accountbalance\n");
     printf("3- withdraw\n");
     printf("4- transfer\n");
-    printf ("-------------------------------------------\n");
+    printf ("------------------------------------------- \n");
     printf ("enter the number of operation: ");
     scanf("%d", op);
 }
